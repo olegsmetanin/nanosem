@@ -114,7 +114,7 @@ export default class Table extends React.Component {
     if (typeof(textFilter) !== "undefined" && textFilter !== '') {
      textFiltredData = data.filter(arr => {
       return arr.some(el => {
-        return (el.toString().toLowerCase().indexOf(textFilter) !== -1)
+        return (el.toString().toLowerCase().indexOf(textFilter.toLowerCase()) !== -1)
       })
     })} else {
       textFiltredData = data;
