@@ -1,7 +1,5 @@
 import { Store } from 'flummox';
 import mixin from './../utils/Mixins.js';
-import lru from 'lru-cache';
-import lunr from 'lunr';
 import React from 'react';
 
 export default class AppStore extends Store {

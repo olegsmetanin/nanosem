@@ -5,7 +5,7 @@ var webpack = require('webpack');
 module.exports = {
   entry: {
   	app:'./src/webclient/assets/js/apps/apps.js',
-  	lib: ["babel/polyfill", 'react', 'react-router', 'flummox', 'superagent', 'fastclick', 'lru-cache']
+  	lib: ["babel/polyfill", 'react', 'react-router', 'flummox', 'superagent', 'fastclick']
   },
   output: {
     path: __dirname + '/dest/webclient/assets/js',
