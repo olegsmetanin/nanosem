@@ -142,7 +142,7 @@ export default class Table extends React.Component {
 
     return <div>
       <DataTypeSelector id={this.state.id} onChange={this.onChangeDataSource} />
-      <TextFilter className="" onChange={this.onChangeTextFilter} />
+      <TextFilter value={this.state.filter.text} onChange={this.onChangeTextFilter} />
           <table className="table table-striped">
              <TableHeader fieldDefs={this.state.fieldDefs} sortDefs={this.state.sortDefs} onChangeSortOrder={this.onChangeSortOrder} onRemoveSortField={this.onRemoveSortField} />
              <TableContent data={pagedData}/>
